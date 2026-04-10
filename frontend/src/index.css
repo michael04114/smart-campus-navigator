@@ -1,0 +1,85 @@
+/* ============================================
+   SMART CAMPUS NAVIGATOR - GLOBAL STYLES
+   ============================================ */
+
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Make everything full viewport */
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+}
+
+/* Ensure smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Default font */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Full screen pages (for Landing, Login, Register) */
+.full-page {
+    min-height: 100vh !important;
+    height: 100vh !important;
+    width: 100vw !important;
+    overflow: auto;
+}
+
+/* No scrollbars but still scrollable */
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, Opera */
+}
+
+/* ============================================
+   DARK MODE — applied via [data-theme="dark"] on <html>
+   ============================================ */
+:root {
+    --bg-card: #ffffff;
+    --bg-card-2: #f8fafc;
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --text-muted: #94a3b8;
+    --border: #e2e8f0;
+    --input-bg: #ffffff;
+    --shadow: rgba(0,0,0,0.1);
+}
+
+[data-theme="dark"] {
+    --bg-card: #1e2433;
+    --bg-card-2: #252d3d;
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+    --border: #334155;
+    --input-bg: #2d3748;
+    --shadow: rgba(0,0,0,0.4);
+    color-scheme: dark;
+}
+
+/* Dark scrollbars */
+[data-theme="dark"] * {
+    scrollbar-color: #334155 #1e2433;
+}

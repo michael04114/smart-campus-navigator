@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find \"c:\\\\smart-campus-navigator\\\\frontend\\\\src\" -type f \\\\\\( -name \"*.jsx\" -o -name \"*.js\" \\\\\\) -exec grep -l \"MapContainer\\\\|TileLayer\\\\|Marker\\\\|GeoJSON\" {} \\\\;)",
+      "Bash(npm install:*)",
+      "Bash(python3)"
+    ]
+  }
+}
